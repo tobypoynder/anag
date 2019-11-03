@@ -1,12 +1,14 @@
 /* - anag.c - print out all the possible anagrams of a word */
 
-char id[] = "@(#) anag v1.0  Print permutations of a word Author Toby Poynder";
+char id[] = "@(#) anag v1.1  Print permutations of a word Author Toby Poynder";
+
+#define MAXLENGTH 12
 
 main(argc,argv)
 int argc;
 char **argv;
 {
-     char array[10];
+     char array[MAXLENGTH];
      void perms();
      char *swap();
      char *gets();
@@ -20,7 +22,7 @@ char **argv;
      perms(argv[1],n,length);
 }
 char *swap(string,pos_1,pos_2)
-char string[10];
+char string[MAXLENGTH];
 int pos_1,pos_2;
 {
      char temp;
@@ -32,10 +34,10 @@ int pos_1,pos_2;
      return(string);
 }
 void perms(string,stage,length)
-char string[10];
+char string[MAXLENGTH];
 int stage,length;
 {
-	char temp[10];
+	char temp[MAXLENGTH];
 	int i;
 
 	if (length - stage == 2) {
