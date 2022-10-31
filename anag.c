@@ -1,6 +1,6 @@
 /* - anag.c - print out all the possible anagrams of a word */
 
-char id[] = "@(#) anag v1.1  Print permutations of a word Author Toby Poynder";
+char id[] = "@(#) anag v1.2  Print permutations of a word Author Toby Poynder";
 
 #define MAXLENGTH 12
 
